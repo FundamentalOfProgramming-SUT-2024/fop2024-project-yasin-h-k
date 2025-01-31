@@ -5603,12 +5603,14 @@ void play(makan ja,int color){
                 if(kalam == 3){
                     mvprintw(0,5,"                                                                       ");
                     mvprintw(0,5,"your geust.you can not save the game");
+                    refresh();
                 }
                 else{
                     save_game(ja);
+                    return;
                 }
                 
-                return;
+                
             case ' ':
                 char h = 'P';
                 int ss = 0;
